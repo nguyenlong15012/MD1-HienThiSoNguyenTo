@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt('Nhập số lượng số nguyên tố hiện ra: ');
+    let count = 0;
+    let i;
+    let j;
+    for (i = 2; count< num; i++){
+        console.log('i----->', i)
+        let check = true;
+        for (j=2; j<i; j++){
+            if(i%j ==0){
+                console.log('i trong if -------> ',i)
+                console.log('j trong if -------> ', j)
+                check = false;
+                break;
+            }
+        }
+        if(check){
+            count++;
+            document.write(i+' ')
+        }
+    }
+</script>
+</body>
+</html>
